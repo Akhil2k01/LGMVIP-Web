@@ -1,0 +1,100 @@
+h2{
+    margin-top: 80px;
+    margin-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 0 0 10px aquamarine;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: gray;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cal {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: black;
+    box-shadow: 0 5px 50px 0 aquamarine;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.forms {
+    width: 90%;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 24px auto 15px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: orange;
+    padding: 0 5px 0 0;
+}
+
+.text{
+    margin: 5px 5px;
+    width: 95%;
+    height: 75px;
+    background-color: gray;
+    text-align: right;
+    font-size: 50px;
+}
+
+[placeholder]{
+    background-color: white;
+}
+
+.button,.removebtn,.btn{
+    cursor: pointer;
+    width: 52px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    left: 9px;
+    right: 0;
+    top: 140px;
+    margin: 4px;
+    border: 3px solid orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    border-radius: 5px;
+    background: #f0eeef;
+    color: #3b3b3c;
+    box-shadow: inset 0 5px 10px 0 #fff,
+        inset 0 -5px 10px 3px #847a7aba,
+        0 5px 10px 0px #1e211e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:active {
+    box-shadow: inset 0 5px 10px 5px aqua,
+        inset 0 5px 10px 3px #2d1f1fba,
+        0 0px 10px 0px #3f423f00;
+}
+
+.btn:active {
+    box-shadow: inset 0px 5px 10px 5px orange,
+        inset 0 5px 10px 3px #2d1f1fba,
+        0 0px 10px 0px #3f423f00;
+}
+
+.removebtn:active,#clear:active {
+    box-shadow: inset 0 5px 10px 5px red,
+        inset 0 5px 10px 3px #2d1f1fba,
+        0 0px 10px 0px #3f423f00;
+}
+

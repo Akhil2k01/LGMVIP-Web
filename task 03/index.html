@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LGM-task03</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h2>LetsGrowMore-Simple Calculator</h2>
+        <div class="cal">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <form class="forms" name="form">
+                            <input class="text" name="textview" type="textview" placeholder="0">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button" id="clear" onclick="del()">
+                            <div class="inner">C</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="operator('%')">
+                            <div class="inner"> %</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="operator('/')">
+                            <div class="inner">÷</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="removebtn" id="clean" onclick="remove()">
+                            <div class="inner"><i class="material-icons">backspace</i></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="btn" onclick="digit(7)">
+                            <div class="inner">7</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(8)">
+                            <div class="inner">8</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(9)">
+                            <div class="inner">9</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="operator('*')">
+                            <div class="inner">×</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="btn" onclick="digit(4)">
+                            <div class="inner">4</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(5)">
+                            <div class="inner">5</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(6)">
+                            <div class="inner">6</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="digit('-')">
+                            <div class="inner">-</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="btn" onclick="digit(1)">
+                            <div class="inner">1</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(2)">
+                            <div class="inner">2</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="btn" onclick="digit(3)">
+                            <div class="inner">3</div>
+                        </div>
+                    </td>
+                    <td id="plus">
+                        <div class="button" onclick="operator('+')">
+                            <div class="inner">+</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="twozero" class="btn" onclick="twozero()">
+                            <div class="inner">00</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="zero" class="btn" onclick="zero()">
+                            <div class="inner">0</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="button" onclick="digit('.')">
+                            <div class="inner">. </div>
+                        </div>
+                    </td>
+                    <td id="equal">
+                        <div id="second" class="button" onclick="equal()">
+                            <div class="inner">=</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
